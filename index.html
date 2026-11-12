@@ -1,1 +1,16 @@
-ff
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная страница</title>
+  <script>
+    if (!sessionStorage.getItem('captcha_passed')) {
+      window.location.replace('capcha.html');
+    }
+  </script>
+</head>
+<body>
+  <h1>Добро пожаловать на сайт!</h1>
+  <p>Вы успешно прошли проверку.</p>
+</body>
+</html>
